@@ -15,6 +15,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
+// Services
+// import { SettingsService } from './services/service.index';
+
+import { ServiceModule } from "./services/service.module";
+
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 
@@ -29,7 +34,8 @@ import { RegisterComponent } from './login/register.component';
     AppRoutingModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
